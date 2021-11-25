@@ -1,4 +1,4 @@
-{% set version = '0.1-8' %}
+{% set version = "0.1-10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/audio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/audio/audio_{{ version }}.tar.gz
-  sha256: 1a1c78bca63ed1fb5e30e00c593b67e1230b408e6a77c67082b41373d79b5bb4
+  sha256: 82c731a88c741a6b4efe5069ce7dc2f765932d769323ac8d3fbb84ac30afc4dd
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -48,12 +48,10 @@ test:
 about:
   home: http://www.rforge.net/audio/
   license: MIT
-  summary: Interfaces to audio devices (mainly sample-based) from R to allow recording and playback
-    of audio. Built-in devices include Windows MM, Mac OS X AudioUnits and PortAudio
-    (the last one is very experimental).
+  summary: Interfaces to audio devices (mainly sample-based) from R to allow recording and playback of audio. Built-in devices include Windows MM, Mac OS X AudioUnits and PortAudio (the last one is very experimental).
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
