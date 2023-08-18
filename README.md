@@ -3,6 +3,7 @@ About r-audio-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-audio-feedstock/blob/main/LICENSE.txt)
 
+
 About r-audio
 -------------
 
@@ -11,6 +12,7 @@ Home: http://www.rforge.net/audio/
 Package license: MIT
 
 Summary: Interfaces to audio devices (mainly sample-based) from R to allow recording and playback of audio. Built-in devices include Windows MM, Mac OS X AudioUnits and PortAudio (the last one is very experimental).
+
 About r-audio
 -------------
 
